@@ -9,7 +9,10 @@ fun readInput(yearDay: String, name: String):List<String>  {
     return Path("src/$yearDay/$name.txt").readLines()
 }
 
-fun readText(name: String) = Path("src/$name.txt").readText().trim()
+
+fun readText(yearDay: String, name: String):String  {
+    return Path("src/$yearDay/$name.txt").readText().trim()
+}
 
 fun Any?.println() = println(this)
 
