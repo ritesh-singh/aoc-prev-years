@@ -19,7 +19,6 @@ private class Day05(env: Env) {
     private fun String.niceStringNewRule():Boolean {
         if (!(zipWithNext { a, b ->  "$a$b"}.distinct().any { it.toRegex().findAll(this).count() >=2 }))
             return false
-
         if (!(windowed(3).any { it.first() == it.last() }))
             return false
         return true
