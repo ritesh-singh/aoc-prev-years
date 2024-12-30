@@ -3,9 +3,6 @@ package y_2015.day07
 import Env
 import println
 import readInput
-import readText
-import kotlin.math.abs
-import kotlin.math.sign
 
 private class Day07(env: Env) {
     private val input = readInput("y_2015/day07", if (env == Env.TEST) "Day07_test" else "Day07")
