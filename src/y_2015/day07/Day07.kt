@@ -14,7 +14,7 @@ private class Day07(env: Env) {
         }
     }.toMutableMap()
 
-    fun findSignal(source: String, seen:MutableMap<String,UShort>):UShort {
+    private fun findSignal(source: String, seen:MutableMap<String,UShort>):UShort {
         if (seen.contains(source)) return seen[source]!!
         if (source.toUShortOrNull() != null) return source.toUShort()
         return when {
