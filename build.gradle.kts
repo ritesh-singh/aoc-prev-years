@@ -17,4 +17,5 @@ tasks {
 
 dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0-RC")
+    implementation("com.github.shiguruikai:combinatoricskt:1.6.0")
 }
