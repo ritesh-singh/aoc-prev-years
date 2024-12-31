@@ -32,9 +32,7 @@ private class Day11(env: Env) {
     }
 
     fun nextPass(part1: Boolean): String {
-        if (part1)
-            return nextPass(input)
-        return nextPass(nextPass(input))
+        return if (part1) nextPass(input) else nextPass(nextPass(input))
     }
 }
 
